@@ -10,6 +10,10 @@ git clone https://github.com/DevSlop/pixi-crs-demo.git
 
 ### Start Pixi and the OWASP Core Rule Set
 cd pixi-crs-demo  
+
+Change the environment variable BACKEND to your IP address:  
+vim docker-compose.yaml
+
 docker-compose up -d
 
 ### Play with Pixi and the OWASP Core Rule Set

@@ -1,6 +1,8 @@
 # pixi-crs-demo
 DevSlop repository to demonstrate Pixi in combination with the OWASP Core Rule Set (docker-compose.yaml).
 
+This is a Pixi - CRS playground.
+
 Start all components in one command and play with it...
 
 ## Instructions

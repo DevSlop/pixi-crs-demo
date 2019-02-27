@@ -12,13 +12,13 @@ services:
   crs:
     image: franbuehler/modsecurity-crs-rp:v3.1
     ports:
-      - "8001:8001"
+      - "127.0.0.1:8001:8001"
 
     environment:
       # Listening Port of Apache Reverse Proxy
       - PORT=8001
       # Application Backend listens on port 8000 (IP: REPLACEME, but do not use localhost!)
-      - BACKEND=http://192.168.1.104:8000
+      - BACKEND=http://app:8000
       # Paranoia Level
       - PARANOIA=1
       # Inbound and Outbound Anomaly Score Threshold
@@ -54,9 +54,9 @@ services:
   db:
     image: deadrobots/pixi:datastore
     container_name: pixidb
-    ports:
-      - "27017:27017"
-      - "28017:28017"
+#    ports:
+#      - "27017:27017"
+#      - "28017:28017"
     expose:
       - "27017"
       - "28017"
@@ -64,5 +64,5 @@ services:
   app:
     image: deadrobots/pixi:app
     ports:
-      - "8000:8000"
-      - "8090:8090"
+      - "127.0.0.1:8000:8000"
+      - "127.0.0.1:8090:8090"

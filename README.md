@@ -21,7 +21,7 @@ To access Pixi: http://localhost:8000
 To access Pixi through CRS: http://localhost:8001
   
 To access the error.log (one example):  
-docker-compose exec crs cat /var/logs/apache2/error.log
+docker-compose exec crs cat /var/log/apache2/error.log
 
 More instructions coming soon...
 

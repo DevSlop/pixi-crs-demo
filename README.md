@@ -1,4 +1,4 @@
-# pixi-crs-demo
+# pixi-crs-demo - A Pixi - CRS Playground
 DevSlop repository to demonstrate Pixi in combination with the OWASP Core Rule Set (docker-compose.yaml).
 
 This is a Pixi - CRS playground.

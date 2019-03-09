@@ -26,5 +26,11 @@ docker-compose exec crs cat /var/log/apache2/error.log
 More instructions coming soon...
 
 ## Further Reading
+
+### Description of the CRS Docker Image (franbuehler/modsecurity-crs-rp)
+
 https://coreruleset.org/20181212/core-rule-set-docker-image/  
+
+### Description of CRS in a CI Pipeline
+
 https://coreruleset.org/20180619/the-core-rule-set-as-part-of-devops-ci-pipeline/  

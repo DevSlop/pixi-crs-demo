@@ -1,7 +1,7 @@
 import { Selector } from 'testcafe';
 
 fixture`Getting Started`
-    .page `http://172.0.0.1:8000/register`;
+    .page `http://localhost:8000/register`;
 
 test('Register User', async t => {
     await t

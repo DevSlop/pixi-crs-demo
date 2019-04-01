@@ -1,7 +1,7 @@
 import { Selector } from 'testcafe';
 
 fixture`Getting Started`
-    .page `http://172.0.0.1:8001/register`;
+    .page `http://localhost:8001/register`;
 
 test('Register User WITH CRS', async t => {
     await t

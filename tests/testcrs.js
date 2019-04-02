@@ -11,3 +11,11 @@ test('Register User WITH CRS', async t => {
         //After registration the search pixi field should be there
         //.expect('#search_query')
 });
+
+test('Login User', async t => {
+    await t
+	.click('body > div.jumbotron.jumbotron-fluid > div > div:nth-child(5) > div.col-4 > a:nth-child(3) > button')
+        .typeText('input#user', 'testuser@pixi.owasp')
+        .typeText('input#pass', 'testpw')
+	.click('body > div.jumbotron.jumbotron-fluid > div > div:nth-child(5) > div.col-8 > form > button')
+});

@@ -1,8 +1,7 @@
 # This docker-compose file starts DevSlop's intentionally vulnerable app Pixi with its db
 # and the WAF ModSecurity with CRS in front of it.
-# To access the app: http://<ip>:8000
-# To access the app through CRS: http://<ip>:8001
-# You have to replace the environment variable BACKEND with your ip address.
+# To access the app: http://localhost:8000
+# To access the app through CRS: http://localhost:8001
 
 version: "3"
 
@@ -20,7 +19,7 @@ services:
       # Application Backend listens on port 8000 (IP: REPLACEME, but do not use localhost!)
       - BACKEND=http://app:8000
       # Paranoia Level
-      - PARANOIA=1
+      - PARANOIA=4
       # Inbound and Outbound Anomaly Score Threshold
       - ANOMALYIN=5
       - ANOMALYOUT=4

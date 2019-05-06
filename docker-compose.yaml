@@ -19,7 +19,7 @@ services:
       # Application Backend listens on port 8000 (IP: REPLACEME, but do not use localhost!)
       - BACKEND=http://app:8000
       # Paranoia Level
-      - PARANOIA=4
+      - PARANOIA=1
       # Inbound and Outbound Anomaly Score Threshold
       - ANOMALYIN=5
       - ANOMALYOUT=4
